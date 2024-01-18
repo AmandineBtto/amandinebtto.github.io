@@ -7,8 +7,8 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
+  --global-theme-color: #{$blue-color};
+  --global-hover-color: #{$blue-color};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
@@ -16,6 +16,7 @@
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #{$white-color};
+  --global-bg-color-header: #2f4486;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -45,6 +46,32 @@
   .repo-img-dark {
     display: none;
   }
+
+   
+  // Modif theme
+  .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #fff;
+  }
+
+  .navbar.navbar-light .navbar-brand.social a i::before {
+    color: #fff;
+  }
+
+  #light-toggle {
+    color: #fff;
+  }
+
+  .navbar.navbar-light .navbar-brand {
+    color: #fff;
+  }
+
+  @media (min-width: 576px){
+
+    .profile {
+      width: 20%;
+    }
+  }
+  // Fin modif theme
 }
 
 html[data-theme='dark'] {

@@ -1,12 +1,10 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: 
 nav: true
 nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+- [Introduction to Machine Learning, December 2023](https://people.minesparis.psl.eu/fabien.moutarde/ES_MachineLearning/index.html): Practical work supervision of 1st and 2nd year graduate students at Mines Paris, PSL.
