@@ -7,6 +7,8 @@
 @article{brunetto2024neraf,
       title={NeRAF: 3D Scene Infused Neural Radiance and Acoustic Fields}, 
       author={Amandine Brunetto and Sascha Hornauer and Fabien Moutarde},
+      abstract={Sound plays a major role in human perception. Along with vision, it provides essential information for understanding our surroundings. Despite advances in neural implicit representations, learning acoustics that align with visual scenes remains a challenge. We propose NeRAF, a method that jointly learns acoustic and radiance fields. NeRAF synthesizes both novel views and spatialized room impulse responses (RIR) at new positions by conditioning the acoustic field on 3D scene geometric and appearance priors from the radiance field. The generated RIR can be applied to auralize any audio signal. Each modality can be rendered independently and at spatially distinct positions, offering greater versatility. We demonstrate that NeRAF generates high-quality audio on SoundSpaces and RAF datasets, achieving significant performance improvements over prior methods while being more data-efficient. Additionally, NeRAF enhances novel view synthesis of complex scenes trained with sparse data through cross-modal learning.
+NeRAF is designed as a Nerfstudio module, providing convenient access to realistic audio-visual generation.},
       year={2024},
       bibtex_show={true},
       eprint={2405.18213},
@@ -22,6 +24,7 @@
 @inproceedings{brunetto2023batvision,
   author={Brunetto, Amandine and Hornauer, Sascha and Yu, Stella X. and Moutarde, Fabien},
   booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  abstract={Vision research showed remarkable success in understanding our world, propelled by datasets of images and videos. Sensor data from radar, LiDAR and cameras supports research in robotics and autonomous driving for at least a decade. However, while visual sensors may fail in some conditions, sound has recently shown potential to complement sensor data. Simulated room impulse responses (RIR) in 3D apartment-models became a benchmark dataset for the community, fostering a range of audiovisual research. In simulation, depth is predictable from sound, by learning bat-like perception with a neural network. Concurrently, the same was achieved in reality by using RGB-D images and echoes of chirping sounds. Biomimicking bat perception is an exciting new direction but needs dedicated datasets to explore the potential. Therefore, we collected the BatVision dataset to provide large-scale echoes in complex real-world scenes to the community. We equipped a robot with a speaker to emit chirps and a binaural microphone to record their echoes. Synchronized RGB-D images from the same perspective provide visual labels of traversed spaces. We sampled modern US office spaces to historic French university grounds, indoor and outdoor with large architectural variety. This dataset will allow research on robot echolocation, general audio-visual tasks and sound phænomena unavailable in simulated data. We show promising results for audio-only depth prediction and show how state-of-the-art work developed for simulated data can also succeed on our dataset.},
   title={The Audio-Visual BatVision Dataset for Research on Sight and Sound}, 
   year={2023},
   bibtex_show={true},
@@ -39,6 +42,9 @@
 @inproceedings{liu2024pano,
   title={PANO-ECHO: PANOramic depth prediction enhancement with ECHO features},
   author={Liu, Xiaohu and Brunetto, Amandine and Hornauer, Sascha and Moutarde, Fabien and Lu, Jialiang},
+  abstract={Panoramic depth estimation gains importance with more 360° images being widely available. However, traditional mono-to-depth approaches, optimized for a limited field of view, show subpar performance when naively adapted. Methods tailored to process panoramic input improve predictions but can not overcome ambiguous visual information and scale-uncertainty inherent to the task.
+  In this paper we show the benefits of leveraging sound for improved panoramic depth estimation. Specifically, we harness audible echoes from emitted chirps as they contain rich geometric and material cues about the surrounding environment. We show that these auditory cues can enhance a state-of-the-art panoramic depth prediction framework. By integrating sound information, we improve this vision-only baseline by ≈ 12%.
+  Our approach requires minimal modifications to the underlying architecture, making it easily applicable to other baseline models. We validate its efficacy on the Matterport3D and Replica datasets, demonstrating remarkable improvements in depth estimation accuracy},
   booktitle={IEEE Conference on Artificial Intelligence (CAI)},
   pages={1063--1070},
   year={2024},

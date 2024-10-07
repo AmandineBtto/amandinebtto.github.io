@@ -16,3 +16,5 @@ nav_order: 5
 ### Talks: 
 
 - Invited talk at the [2024 PSL Doctoral Conference, AI for the Sciences](https://psl.eu/en/events/doctoral-conference-ai-sciences/): "Audio-Visual Learning for Perception Enhancement".
+
+- Paper presentation talk at IROS 2023: "The Audio-Visual Batvision Dataset".
