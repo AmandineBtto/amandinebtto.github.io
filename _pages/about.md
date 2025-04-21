@@ -22,7 +22,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am currently a Ph.D. candidate at [PSL Research University](https://psl.eu/en), [Mines Paris](https://www.minesparis.psl.eu/), in the "perception and machine learning" team of the [Center for Robotics](https://www.caor.minesparis.psl.eu/presentation/perception-and-machine-learning/) (CAOR) where I'm adivsed by [Pr. Fabien Moutarde](https://people.minesparis.psl.eu/fabien.moutarde/).
+I'm a final-year PhD student at [PSL Research University](https://psl.eu/en), working at the [Center for Robotics](https://www.caor.minesparis.psl.eu/presentation/perception-and-machine-learning/) at [Mines Paris](https://www.minesparis.psl.eu/). My research focuses on multimodal learning with a focus on how combining the audio and visual modalities can enhance perception.
 
+My passion for audio runs deep—I'm also a musician—which naturally led me to explore how sound interacts with visual information in learning systems. Recently, I worked on NeRAF, a method for implicit acoustic learning based on 3D scenes that generates spatial room impulse responses at novel viewpoints (ICLR 2025). I also contributed to the Audio-Visual Batvision dataset, which addresses depth prediction from robot-generated echoes (IROS 2023).
 
-My research centers on the dynamic intersection of computer vision, audio processing, and neural rendering, with a specific emphasis on multimodal learning that integrates sight and sound information. My objective is to enhance computer vision techniques by enabling them to discern both geometrical and semantic insights from the auditory modality. I also aspire to develop methods that can express spatial understanding through the generation of realistic sounds.
+Broadly, I’m interested in multimodal generation, audio & computer vision, neural implicit learning and increasingly, diffusion models.
+
+In a few months, I’ll be looking for exciting opportunities, either as a research scientist in an industrial lab or in a postdoctoral position, where I can keep pushing the boundaries of multimodal AI. 
+Feel free to reach out if you're interested in collaborating, chatting about research, or if you know of opportunities that align with my work.
