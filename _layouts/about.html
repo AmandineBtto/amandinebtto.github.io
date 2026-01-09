@@ -54,10 +54,34 @@ layout: default
           {%- endif %}
 
           <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
-            {%- include selected_papers.html %}
+          {% if false && page.selected_papers -%}
+          <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
+          {%- include selected_papers.html %}
           {%- endif %}
+          
+          <!-- Papers -->
+          <div style="height:15px">&nbsp;</div>
+           <h2 id="publications" style="margin-bottom: -5px"><a href="{{ '#publications' | relative_url }}" style="color: inherit;">Publications</a></h2>
+           <div class="publications">
+
+            {% bibliography -f {{ site.scholar.bibliography }} %}
+
+            </div>
+
+          <!-- Teaching -->
+          <div style="height:15px">&nbsp;</div>
+            <h2 id="teaching"><a href="{{ '#teaching' | relative_url }}" style="color: inherit;">Teaching</a></h2>
+            {%- include teaching.html %}
+
+          <!-- Talk -->
+          <div style="height:15px">&nbsp;</div>
+            <h2 id="talks"><a href="{{ '#talks' | relative_url }}" style="color: inherit;">Talks</a></h2>
+            {%- include talks.html %}
+
+          <!-- Service -->
+          <div style="height:15px">&nbsp;</div>
+            <h2 id="service"><a href="{{ '#service' | relative_url }}" style="color: inherit;">Service</a></h2>
+            {%- include service.html %}
 
           <!-- Social -->
           {%- if page.social %}
