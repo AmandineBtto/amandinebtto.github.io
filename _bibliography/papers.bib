@@ -3,34 +3,26 @@
 
 @string{aps = {American Physical Society,}}
 
-  @inproceedings{kasmi2024one,
-  title={One Wave to Explain Them All: A Unifying Perspective on Post-hoc Explainability},
-  author={Kasmi, Gabriel and Brunetto, Amandine and Fel, Thomas and Parekh, Jayneel},
-  abstract={Despite the growing use of deep neural networks in safety-critical decision-making, their inherent black-box nature hinders transparency and interpretability. 
-  Explainable AI (XAI) methods have thus emerged to understand a model's internal workings, and notably attribution methods also called saliency maps. 
-  Conventional attribution methods typically identify the locations -- the where -- of significant regions within an input. 
-  However, because they overlook the inherent structure of the input data, these methods often fail to interpret what these regions represent in terms of structural components (e.g., textures in images or transients in sounds). 
-  Furthermore, existing methods are usually tailored to a single data modality, limiting their generalizability. In this paper, we propose leveraging the wavelet domain as a robust mathematical foundation for attribution. 
-  Our approach, the Wavelet Attribution Method (WAM) extends the existing gradient-based feature attributions into the wavelet domain, providing a unified framework for explaining classifiers across images, audio, and 3D shapes. 
-  Empirical evaluations demonstrate that WAM matches or surpasses state-of-the-art methods across faithfulness metrics and models in image, audio, and 3D explainability. 
-  Finally, we show how our method explains not only the where -- the important parts of the input -- but also the what -- the relevant patterns in terms of structural components.},
-  booktitle={Forty-second International Conference on Machine Learning},
-  year={2025},
-  preview={WAM.png},
-  bibtex_show={true},
-  url={https://openreview.net/forum?id=njZ5oVPObS},
-  pdf={https://openreview.net/forum?id=njZ5oVPObS},
-  code={https://github.com/gabrielkasmi/wam}, 
-  website={https://gabrielkasmi.github.io/wam/},
-  selected={true},
-}
+@inproceedings{brunetto2026flac,
+    title={Few-shot Acoustic Synthesis with Multimodal Flow Matching},
+    author={Amandine Brunetto},
+    abstract={Generating audio that is acoustically consistent with a scene is essential for immersive virtual environments. Recent neural acoustic field methods enable spatially continuous sound rendering but remain scene-specific, requiring dense audio measurements and costly training for each environment. Few-shot approaches improve scalability across rooms but still rely on multiple recordings and, being deterministic, fail to capture the inherent uncertainty of scene acoustics under sparse context. We introduce flow-matching acoustic generation (FLAC), a probabilistic method for few-shot acoustic synthesis that models the distribution of plausible room impulse responses (RIRs) given minimal scene context. FLAC leverages a diffusion transformer trained with a flow-matching objective to generate RIRs at arbitrary positions in novel scenes, conditioned on spatial, geometric, and acoustic cues. FLAC outperforms state-of-the-art eight-shot baselines with one-shot on both the AcousticRooms and Hearing Anything Anywhere datasets. To complement standard perceptual metrics, we further introduce AGREE, a joint acoustic–geometry embedding, enabling geometry-consistent evaluation of generated RIRs through retrieval and distributional metrics. This work is the first to apply generative flow matching to RIR synthesis, establishing a new direction for robust and data-efficient acoustic synthesis.},
+    booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2026},
+    preview={FLAC_concept.png},
+    bibtex_show={true},
+    pdf={https://arxiv.org/abs/2603.19176}, 
+    code={https://github.com/AmandineBtto/FLAC},
+    website={https://amandinebtto.github.io/FLAC/},
+    selected={true},
+    }
 
 @inproceedings{brunetto2025neraf,
     title={Ne{RAF}: 3D Scene Infused Neural Radiance and Acoustic Fields},
     author={Amandine Brunetto and Sascha Hornauer and Fabien Moutarde},
     abstract={Sound plays a major role in human perception. Along with vision, it provides essential information for understanding our surroundings. Despite advances in neural implicit representations, learning acoustics that align with visual scenes remains a challenge. We propose NeRAF, a method that jointly learns acoustic and radiance fields. NeRAF synthesizes both novel views and spatialized room impulse responses (RIR) at new positions by conditioning the acoustic field on 3D scene geometric and appearance priors from the radiance field. The generated RIR can be applied to auralize any audio signal. Each modality can be rendered independently and at spatially distinct positions, offering greater versatility. We demonstrate that NeRAF generates high-quality audio on SoundSpaces and RAF datasets, achieving significant performance improvements over prior methods while being more data-efficient. Additionally, NeRAF enhances novel view synthesis of complex scenes trained with sparse data through cross-modal learning.
 NeRAF is designed as a Nerfstudio module, providing convenient access to realistic audio-visual generation.},
-    booktitle={The Thirteenth International Conference on Learning Representations},
+    booktitle={The Thirteenth International Conference on Learning Representations (ICLR)},
     year={2025},
     preview={NeRAF_concept.png},
     bibtex_show={true},
@@ -40,7 +32,28 @@ NeRAF is designed as a Nerfstudio module, providing convenient access to realist
     website={https://amandinebtto.github.io/NeRAF/},
     selected={true},
     }
-
+  
+@inproceedings{kasmi2024one,
+title={One Wave to Explain Them All: A Unifying Perspective on Post-hoc Explainability},
+author={Kasmi, Gabriel and Brunetto, Amandine and Fel, Thomas and Parekh, Jayneel},
+abstract={Despite the growing use of deep neural networks in safety-critical decision-making, their inherent black-box nature hinders transparency and interpretability. 
+Explainable AI (XAI) methods have thus emerged to understand a model's internal workings, and notably attribution methods also called saliency maps. 
+Conventional attribution methods typically identify the locations -- the where -- of significant regions within an input. 
+However, because they overlook the inherent structure of the input data, these methods often fail to interpret what these regions represent in terms of structural components (e.g., textures in images or transients in sounds). 
+Furthermore, existing methods are usually tailored to a single data modality, limiting their generalizability. In this paper, we propose leveraging the wavelet domain as a robust mathematical foundation for attribution. 
+Our approach, the Wavelet Attribution Method (WAM) extends the existing gradient-based feature attributions into the wavelet domain, providing a unified framework for explaining classifiers across images, audio, and 3D shapes. 
+Empirical evaluations demonstrate that WAM matches or surpasses state-of-the-art methods across faithfulness metrics and models in image, audio, and 3D explainability. 
+Finally, we show how our method explains not only the where -- the important parts of the input -- but also the what -- the relevant patterns in terms of structural components.},
+booktitle={Forty-second International Conference on Machine Learning (ICML)},
+year={2025},
+preview={WAM.png},
+bibtex_show={true},
+url={https://openreview.net/forum?id=njZ5oVPObS},
+pdf={https://openreview.net/forum?id=njZ5oVPObS},
+code={https://github.com/gabrielkasmi/wam}, 
+website={https://gabrielkasmi.github.io/wam/},
+selected={true},
+}
 
 @inproceedings{brunetto2023batvision,
   author={Brunetto, Amandine and Hornauer, Sascha and Yu, Stella X. and Moutarde, Fabien},

@@ -10,7 +10,6 @@ nav_order: 5
 #obsolete: use HTML in _includes
 ---
 
-
 - Poster presentation at the [Audio augmented reality workshop](https://www.stms-lab.fr/agenda/audio-augmented-reality-workshop/detail), IRCAM, 12-2024.
 
 - Spotlight talk and poster presentation at the GDR IASIS day "Audio, Vision, Perception", 11-2024 (CNRS).
